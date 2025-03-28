@@ -5,26 +5,21 @@
 #include <arpa/inet.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
-#include <errno.h>
-#include <fcntl.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <sys/select.h>
-#include <signal.h>
-#include <time.h>
 #include <sys/time.h>
 #include <pthread.h>
 #include <sys/wait.h>
-#include <sys/ioctl.h>
-#include <netdb.h>
-#include <ctype.h>
-#include <sys/mman.h>
-#include <sys/uio.h>
-#include <sys/stat.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
+#include <signal.h>
+#include <gtk/gtk.h>
+struct Whiteboard {
+    char *name;
+    char *owner;
+    char *description;
+    char *created_at;
+    char *updated_at;
+    char *background_color;
+    struct Pen pen;
+};
 
-int main() {
+int main(int argc, char **argv) {
     return 0;
 }
